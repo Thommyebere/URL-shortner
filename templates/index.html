@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1>Welcome to Thomas URL Shortening Service!</h1>
+</head>
+<body>
+<form action="/" method="post">
+    <label for="url">Enter URL:</label><br>
+    <input type="text" id="Email" name="url" maxlength="4" size="100" placeholder="Enter URL"><br>
+    <input type="submit" value="shorten URL">
+</form>
+</body>
+{% if short_url %}
+
+<hr>
+<a href="{{short_url}}">{{short_url}}</a>
+
+{% endif %}
+</html>
